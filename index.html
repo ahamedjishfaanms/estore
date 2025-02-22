@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Digital Hub Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">E-Book</a></li>
+      <li><a href="#">Question Paper</a></li>
+      <li><a href="#">Newsletter</a></li>
+      <li><a href="#">Store</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="login-section">
+      <button id="login-btn">Login</button>
+      <div id="profile" style="display: none;">
+        <span id="profile-name"></span>
+      </div>
+    </div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- Slideshow -->
+  <div class="slideshow">
+    <div class="slide">
+      <img src="slide1.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <img src="slide2.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="slide3.jpg" alt="Slide 3">
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+  <!-- Latest News Section -->
+  <div class="latest-news">
+    <h3>Latest News</h3>
+    <div class="news-container">
+      <p class="news-text">
+        <a href="#">New E-Book Release: "The Future of AI"</a> |
+        <a href="#">Library Closed on December 25th</a> |
+        <a href="#">Join Our Online Book Club</a> |
+        <a href="#">Special Discount on E-books</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Welcome to Digital Hub</h1>
+    <p>Your one-stop destination for e-books, question papers, newsletters, and more.</p>
+  </main>
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="reg-number">University Register Number:</label>
+        <input type="text" id="reg-number" name="reg-number" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
